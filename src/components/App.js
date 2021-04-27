@@ -88,7 +88,7 @@ class App extends React.Component {
           className="weather-mini-icon"
           alt={this.state.post["list"][i].weather[0].icon}
           src={
-            "http://openweathermap.org/img/w/" +
+            "https://openweathermap.org/img/w/" +
             this.state.post["list"][i].weather[0].icon +
             ".png"
           }
@@ -127,7 +127,7 @@ class App extends React.Component {
       this.setState({ actualLat: position.coords.latitude.toFixed(3) });
       console.log("long " + this.state.actualLon);
       let urlOfLocation =
-        "http://api.openweathermap.org/data/2.5/find?lat=" +
+        "https://api.openweathermap.org/data/2.5/find?lat=" +
         this.state.actualLat +
         "&lon=" +
         this.state.actualLon +
